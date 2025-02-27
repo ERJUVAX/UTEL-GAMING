@@ -1,16 +1,19 @@
 const apiKey = 'efd2156a99624722804a45b8266aa500'; // Tu clave API
 const apiUrl = `https://newsapi.org/v2/everything?q=videojuegos&language=es&sortBy=publishedAt&apiKey=${apiKey}`;
 
-// Función para obtener y mostrar las noticias
+// Función para obtener y mostrar las noticias usando el proxy de AllOrigins
 async function cargarNoticias() {
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`);
         const data = await response.json();
         
-        if (data.status === "ok") {
-            mostrarNoticias(data.articles);
+        // Convertimos el contenido en JSON válido
+        const noticias = JSON.parse(data.contents);
+
+        if (noticias.status === "ok") {
+            mostrarNoticias(noticias.articles);
         } else {
-            console.error('Error al obtener noticias:', data.message);
+            console.error('Error al obtener noticias:', noticias.message);
         }
     } catch (error) {
         console.error('Error en la conexión a la API:', error);
