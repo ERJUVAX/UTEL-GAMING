@@ -1,0 +1,148 @@
+/* Barra de navegación */
+.mi-navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #1fd361 !important; /* Prioridad */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    align-items: center;
+    padding: 0 1rem;
+}
+.logo img {
+    justify-content: flex-start;
+    height: 50px; /* Ajusta la altura del logo */
+    width: auto;  /* Mantiene la proporción de la imagen */
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    z-index: 2; /* Asegura que el logo no se quede detrás de la barra */
+    flex: 0 1 auto; /* Permite que el logo no se expanda, asegurando que quede a la izquierda */
+    
+}
+
+.navbar .mi-nav {
+    display: flex;
+   /* justify-content: flex-end;  Mueve los enlaces hacia la derecha */
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .mi-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .mi-nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Efecto hover */
+.navbar .mi-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-item {
+    background: transparent; 
+    color: transparent; 
+    border: none;
+}
+
+
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido debe expandirse, empujando el footer hacia abajo */
+.container {
+    flex: 1;
+}
+body {
+    background: linear-gradient(to bottom, #0c7127, #000000);
+    color: white;
+}
+.container {
+    margin-top: 50px;
+}
+.title, .subtitle {
+    text-align: center;
+}
+.button {
+    background-color: #ff4655;
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #d43f50;
+}
+.box {
+    background: #000000;
+    border-radius: 10px;
+    padding: 20px;
+}
+.resaltado {
+    color: #ff4500; /* Naranja fuerte, puedes cambiarlo */
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: rgb(8, 242, 242);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+
+}
+
+footer {
+    background-color: #000000;
+    color:  #0cefef;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Tema claro (por defecto) */
+.mi-navbar a {
+    color: black; /* Color del texto en el modo claro */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Tema oscuro */
+  .dark-mode .navbar a {
+    color: white; /* Cambia a blanco en el modo oscuro */
+  }
+  
+/* Modo oscuro para la sección Torneos */
+body.dark-mode {
+    background-color: #1fd361;
+    color: white;
+}
+
+/* Evita que la barra de navegación cambie en modo oscuro */
+body.dark-mode .mi-navbar {
+    background-color: #1fd361 !important;
+}
+

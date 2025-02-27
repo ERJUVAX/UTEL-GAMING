@@ -1,0 +1,140 @@
+.logo img {
+    height: 50px; /* Ajusta la altura según el tamaño de la barra */
+    width: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Evita que la imagen se salga de la barra */
+}
+header {
+    background-color: #1fd361; /* Mantener el fondo verde */
+    color: #fff; /* Color de texto blanco en la barra de navegación */
+}
+/* Asegurar que la barra de navegación se mantenga verde */
+.mi-navbar {
+    background-color: #1fd361 !important; /* Verde */
+}
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido debe expandirse, empujando el footer hacia abajo */
+.container {
+    flex: 1;
+}
+body {
+    background: linear-gradient(to bottom, #0c7127, #000000);
+    color: white;
+}
+
+
+
+#inicio {
+    height: 20vh; /* Reduce la altura de la sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.texto-noticias {
+    text-align: center;
+    margin-bottom: 20px; /* Agrega espacio antes de la imagen */
+    z-index: 2;
+}
+/* Estilos para los textos  */
+h2[data-translate="title"] {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+/* --- FOOTER --- */
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: rgb(8, 242, 242);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+
+}
+#noticias {
+    padding: 40px;
+    background: linear-gradient(to bottom, #0c7127, #000000);
+}
+
+#noticias-container {
+    max-width: 700px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background: #00050a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto y contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que cada noticia esté centrada */
+}
+
+
+
+.noticia {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(237, 4, 4, 0.561);
+}
+
+.noticia h3 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.noticia p {
+    font-size: 14px;
+    color: #080808;
+}
+
+.noticia-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Hacemos que las noticias sean responsivas */
+@media (max-width: 768px) {
+    .noticia {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .noticia {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #000000;
+    color:  #0cefef;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+}
