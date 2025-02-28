@@ -3,114 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utel Gaming</title>
+    <title>Convocatoria - Torneo de League of Legends</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="torneos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+<!-- Barra de navegacion -->
+
+<header class="mi-navbar">
+    <div class="logo">
+        <a href="../index.html"><img src="../Images/utel gaming logo.png" alt="UTEL GAMING"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../paginas secundarias/noticias.html">Noticias</a></li>
+            <li><a href="../paginas secundarias/juegos.html">Juegos</a></li>
+            <li><a href="../paginas secundarias/torneos.html">Torneos</a></li>
+            <li><a href="../paginas secundarias/nosotros.html">Nosotros</a></li>
+            <button id="toggleTheme">
+                <i id="themeIcon" class="fa-solid fa-sun"></i>
+            </button>
+            <button id="toggleLanguage">🌍</button>
+        </ul>
+    </nav>
+</header>
+
+    <h2 data-translate="title">¡Proximo torneo!</h2>
+    <p data-translate="description">Se parte y apoya a tu equipo favorito de Esports.</p>
+
 <body>
 
-    <!-- Barra de navegación -->
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../Images/logo.png" alt="UTEL GAMING"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../paginas secundarias/noticias.html">Noticias</a></li>
-                <li><a href="../paginas secundarias/gdd.html">GDD</a></li>
-                <li><a href="../paginas secundarias/juegos.html">Juegos</a></li>
-                <li><a href="../paginas secundarias/nosotros.html">Nosotros</a></li>
-                <button id="toggleTheme">
-                    <li id="themeIcon" class="fa-solid fa-sun"></li>
-                </button>
-                <button id="toggleLanguage">🌍</button>
+    <div class="container">
+        <div class="box">
+            <h1 class="title has-text-white">🔥 Torneo de League of Legends 🔥</h1>
+            <h2 class="subtitle has-text-danger">¡Demuestra tu habilidad en la Grieta del Invocador!</h2>
+
+            <p style="color: #b7ff00;"><strong <strong style="color: #ff0000;">📅 Fecha:</strong>
+                📅 </strong> Por definir  </p>
+            <p style="color: #b7ff00;"><strong <strong style="color: #ff0000;">⏰ hora:</strong>
+                ⏰ </strong> Hora cdmx</p>
+            <p style="color: #b7ff00;"><strong <strong style="color: #ff0000;">📍 modalidad:</strong>
+                📍 </strong> 5v5, Eliminación Directa</p>
+            <p style="color: #b7ff00;"><strong <strong style="color: #ff0000;">🏆 premio:</strong>
+                🏆 </strong>  certificado de participación y más premios por confirmar por la universidad</p>
+
+            <h3 class="title is-5 has-text-white">📜 Requisitos de inscripción:</h3>
+            <ul class="resaltado">
+                <li>Ser alumno de la universidad de UTEL.</li>
+                <li>Contar con un equipo de 5 jugadores.</li>
+                <li>Todos los jugadores deben proporcionar su Summoner Name.</li>
+                <li>Respetar el reglamento del torneo.</li>
             </ul>
-        </nav>
-    </header>
+            
 
-    <!-- Sección de inicio -->
-    <section id="inicio" class="hero">
-        <h1 data-translate="title">¡Torneo Utel Gaming!</h1>
-        <p data-translate="description">¡¡¡PROXIMAMENTE!!!</p>
-        <p data-translate="description2">Sé parte de este torneo de E-sports.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="redes-sociales">
-            <a href="" target="discord"><i class="fa-brands fa-discord"></i></a>
-            <a href="https://twitch.tv/tu_canal" target="twitch"><i class="fa-brands fa-twitch"></i></a>
-            <a href="https://www.facebook.com/people/UTEL-GAME/61572997448485/?rdid=tuzphuT16stQNWy4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15KrE6xCU9%2F" target="facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/user/UniversidadUTEL" target="youtube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://x.com/utel_?lang=es&mx=2" target="x"><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href="https://www.instagram.com/uteluniversidad/channel/" target="instagram"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://mx.linkedin.com/school/uteluniversidad/" target="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.tiktok.com/@uteluniversidad?lang=es" target="tik tok"><i class="fa-brands fa-tiktok"></i></a>
+            <h3 class="title is-5 has-text-white">📌 Registro:</h3>
+            <p style="color: #b7ff00;">Para inscribirte, llena el formulario con los datos de tu equipo:</p>
+            
+            <div class="has-text-centered">
+                <a href="https://forms.gle/9VK7xJtueNwyjCx5A" target="_blank">
+                    <button class="button is-large">¡Regístrate aquí!</button>
+                    
+                </a>
+            </div>
         </div>
-        <div data-translate="footerText">
-            Todos los derechos reservados © UTEL GAMING 2025
-        </div>
-    </footer>
+    </div>
+  <!-- Pie de página -->
+  <footer>
+    <div class="redes-sociales">
+        <!-- <a href="" target="discord"><i class="fa-brands fa-discord"></i></a>-->
+         <a href="https://www.twitch.tv/ugam1ng" target="twitch"><i class="fa-brands fa-twitch"></i></a>
+         <a href="https://www.facebook.com/people/UTEL-GAME/61572997448485/?rdid=tuzphuT16stQNWy4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15KrE6xCU9%2F" target="facebook"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://www.youtube.com/watch?v=enrlk0Gz5zI" target="youtube"><i class="fa-brands fa-youtube"></i></a>
+         <a href="https://x.com/utel_?lang=es&mx=2" target="x"><i class="fa-brands fa-square-x-twitter"></i></a>
+         <a href="https://www.instagram.com/uteluniversidad/channel/" target="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+         <a href="https://mx.linkedin.com/school/uteluniversidad/" target="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+         <a href="https://www.tiktok.com/@uteluniversidad?lang=es" target="tik tok"><i class="fa-brands fa-tiktok"></i></a>
+     </div>
+    <div data-translate="footerText">
+        Todos los derechos reservados © Utel gaming 2025
+    </div>
+</footer>
 
-    <!-- Script de cambio de tema -->
+<script src="../script.js"></script>
+
+<!--script de boton cambiar tema-->
+
     <script>
-        const toggleButton = document.getElementById('toggleTheme');
-        const themeIcon = document.getElementById('themeIcon');
+    const toggleButton = document.getElementById('toggleTheme');
+    const themeIcon = document.getElementById('themeIcon');
 
-        // Aplicar tema guardado
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark-mode');
-            themeIcon.classList.replace("fa-sun", "fa-moon");
-        }
+    // Aplicar tema guardado
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+    }
 
-        // Función para cambiar tema y actualizar estilos
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
+    // Función para cambiar tema y actualizar estilos
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        
+        // Cambiar icono
+        themeIcon.classList.replace(isDark ? "fa-sun" : "fa-moon", isDark ? "fa-moon" : "fa-sun");
 
-            // Cambiar icono
-            themeIcon.classList.replace(isDark ? "fa-sun" : "fa-moon", isDark ? "fa-moon" : "fa-sun");
+        // Guardar la preferencia del tema en el almacenamiento local
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
 
-            // Guardar la preferencia del tema en el almacenamiento local
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        });
-    </script>
+  <!--script boton cambiar idioma-->
 
-    <!-- Script de cambio de idioma -->
-    <script>
-        const translations = {
-            es: {
-                title: "¡Torneo Utel Gaming!",
-                description: "¡¡¡PROXIMAMENTE!!!",
-                description2: "Sé parte de este torneo de E-sports.",
-                footerText: "Todos los derechos reservados © UTEL GAMING 2025"
-            },
-            en: {
-                title: "Welcome to the Utel Gaming Tournament!",
-                description: "Coming Soon!!!",
-                description2: "Be part of this E-sports tournament.",
-                footerText: "All rights reserved © UTEL GAMING 2025"
-            }
-        };
+  <script>
+    const translations = {
+      es: {
 
-        const languageButton = document.getElementById("toggleLanguage");
+        footerText: "Todos los derechos reservados © Utel gaming 2025" 
+      },
+      en: {
+         
+         footerText: "All rights reserved © Utel gaming 2025"
+      }
+    };
+  
+    const languageButton = document.getElementById("toggleLanguage");
+  
+    function setLanguage(lang) {
+      document.querySelectorAll("[data-translate]").forEach(element => {
+        const key = element.getAttribute("data-translate");
+        element.textContent = translations[lang][key];
+      });
+      localStorage.setItem("language", lang); // Guardar el idioma actual
+    }
+  
+    languageButton.addEventListener("click", () => {
+        const currentLang = localStorage.getItem("language") === "es" ? "en" : "es";
+        setLanguage(currentLang);
+    });
 
-        function setLanguage(lang) {
-            document.querySelectorAll("[data-translate]").forEach(element => {
-                const key = element.getAttribute("data-translate");
-                element.textContent = translations[lang][key];
-            });
-            localStorage.setItem("language", lang);  // Guardar la preferencia de idioma
-        }
-
-        languageButton.addEventListener("click", () => {
-            const currentLang = localStorage.getItem("language") === "es" ? "en" : "es";
-            setLanguage(currentLang);
-        });
-
-        // Aplicar el idioma guardado al cargar la página
-        setLanguage(localStorage.getItem("language") || "es");
-    </script>
-
+    // Aplicar el idioma guardado al cargar la página
+    setLanguage(localStorage.getItem("language") || "es");
+  </script>
 </body>
 </html>
