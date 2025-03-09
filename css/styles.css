@@ -14,7 +14,7 @@
     --bg-color: black;
     --text-color: white;
   
-    --nav-text-color: #1fd361; /* Color en modo oscuro */
+    --nav-text-color: #000000; /* Color en modo oscuro */
 }
 
 /* Aplicar la variable a los enlaces */
